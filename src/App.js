@@ -20,6 +20,7 @@ export const DataContext = createContext()
 function App() {
 	const [data, setData] = useState([])
 	const [userInfo, setUserInfo] = useState(null);
+	
 
 	useEffect(() => {
 		// console.log(JSON.stringify(data))
@@ -31,8 +32,6 @@ function App() {
 				setData(data)
 
 			});
-
-
 	}, []);
 
 	const updateUser = (userInfo) => {
